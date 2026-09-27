@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build-css": "postcss src/styles.css -o dist/styles.css",
+    "build-css": "postcss src/app/globals.css -o dist/styles.css",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

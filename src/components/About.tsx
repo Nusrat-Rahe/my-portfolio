@@ -36,7 +36,7 @@ export default function About() {
             <div className="space-y-4 md:border-r md:border-primary/10 md:pr-8">
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-primary font-bold mb-1">
-                  Computer Science Student
+                  Name
                 </p>
                 <p className="text-lg font-semibold text-accent">
                   Nusrat Jahan Rahe
