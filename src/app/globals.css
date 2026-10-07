@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #f8fbfd;
+  --color-background:#f8fbfd;
   --color-primary: #0f766e;
   --color-surface: #ffffff;
   --color-accent: #17324d;
@@ -12,41 +12,19 @@ body {
   color: var(--color-accent);
   color-scheme: light;
   overflow-x: hidden;
-  position: relative;
 }
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -2;
-  background: 
-    radial-gradient(circle at 15% 20%, rgba(20, 184, 166, 0.12) 0%, transparent 42%),
-    radial-gradient(circle at 85% 75%, rgba(56, 189, 248, 0.1) 0%, transparent 42%),
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(20, 184, 166, 0.12) 0%, transparent 34%),
+    radial-gradient(circle at 82% 22%, rgba(56, 189, 248, 0.1) 0%, transparent 36%),
+    radial-gradient(circle at 50% 58%, rgba(255, 255, 255, 0.92) 0%, transparent 58%),
     linear-gradient(135deg, #f8fbfd 0%, #edf5f7 100%);
-  filter: blur(28px);
-  animation: nebulaPulse 20s ease-in-out infinite alternate;
-}
-
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background: radial-gradient(circle at 70% 20%, rgba(15, 118, 110, 0.08) 0%, transparent 40%);
-  animation: nebulaDrift 25s linear infinite;
-}
-
-@keyframes nebulaPulse {
-  0% { transform: scale(1); opacity: 0.8; }
-  100% { transform: scale(1.2); opacity: 1; }
-}
-
-@keyframes nebulaDrift {
-  0% { transform: rotate(0deg) translate(0, 0); }
-  50% { transform: rotate(5deg) translate(2%, 2%); }
-  100% { transform: rotate(0deg) translate(0, 0); }
 }
 
 .animate-card {
@@ -60,4 +38,14 @@ body::after {
   border-color: var(--color-primary);
   box-shadow: 0 12px 30px rgba(20, 184, 166, 0.14);
   transform: translateY(-5px);
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+
+  body::before {
+    display: none;
+  }
 }

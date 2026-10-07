@@ -16,7 +16,6 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-4 text-accent">
             About <span className="text-primary text-glow">Me</span>
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full opacity-50"></div>
         </motion.div>
 
         {/* Main Content Card */}
@@ -87,9 +86,8 @@ export default function About() {
                     software development
                   </span>
                   , and research, I enjoy turning ideas into practical and
-                  user-focused digital solutions. I am continuously improving
-                  my programming, problem-solving, and technical skills through
-                  academic projects and personal development.
+                  user-focused digital solutions. I enjoy learning new
+                  technologies and building practical projects.
                 </p>
 
               </div>

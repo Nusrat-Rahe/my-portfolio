@@ -6,7 +6,8 @@ export default function Education() {
     { 
       degree: "B.SC : Computer Science and Engineering", 
       institution: "Metropolitan University Sylhet, BD", 
-      date: "Expected 2027",
+      achievement: "Chairman Scholarship Receipient",
+      date: "2023-Expected 2027",
       
     },
     { 
@@ -65,6 +66,11 @@ export default function Education() {
                     {edu.background && (
                       <p className="mt-2 text-sm text-accent/60">
                         Background: {edu.background}
+                      </p>
+                    )}
+                    {edu.achievement && (
+                      <p className="mt-2 text-sm text-accent/60">
+                        {edu.achievement}
                       </p>
                     )}
                   </div>

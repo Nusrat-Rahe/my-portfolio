@@ -1,6 +1,5 @@
 import "./globals.css";
 import { ReactNode } from "react";
-import ParticlesBackground from "../components/layout/ParticlesBackground";
 import Navbar from "../components/layout/Navbar";
 
 export const metadata = {
@@ -29,13 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="relative min-h-screen bg-background text-accent overflow-x-hidden antialiased">
         <Navbar />
 
-        {/* Particle Background Layer */}
-        <div className="fixed inset-0 -z-10">
-           <ParticlesBackground />
-        </div>
-
-        
-        <main className="relative max-w-7xl mx-auto px-6 md:px-10 py-16">
+        <main className="relative max-w-7xl mx-auto px-6 md:px-10 py-16 print:max-w-none print:px-0 print:py-0">
           {children}
         </main>
 

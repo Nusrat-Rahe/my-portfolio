@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-10 border-t border-primary/10 text-center">
+    <footer className="py-2 border-t border-b border-primary/10 text-center">
       <div className="space-y-4">
         <p className="text-sm font-bold tracking-widest text-accent">
           N.<span className="text-primary">RAHE</span>
